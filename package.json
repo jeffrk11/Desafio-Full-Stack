@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jeffrk11/Desafio-Full-Stack/issues"
   },
-  "homepage": "https://github.com/jeffrk11/Desafio-Full-Stack#readme"
+  "homepage": "https://github.com/jeffrk11/Desafio-Full-Stack#readme",
+  "dependencies": {
+    "pg": "^8.7.3",
+    "sequelize": "^6.20.1"
+  }
 }
