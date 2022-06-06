@@ -1,18 +1,19 @@
-const Sequelize = require('sequelize')
-const database = require('./db')
+const { Sequelize, DataTypes } = require('sequelize')
+// const sequelize = new Sequelize('postgres')
+const sequelize = require('../db')
 
-const Product = database.define("product",{
+const Product = sequelize.define("products",{
     id:{
-        type: Sequelize.BIGINT,
+        type: DataTypes.BIGINT,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
     },
-    product_name:{
-        type: Sequelize.STRING,
+    name:{
+        type: DataTypes.STRING,
         allowNull: false,
     },
-    value: Sequelize.FLOAT
+    value: DataTypes.FLOAT
 })
 
 module.exports = Product;
